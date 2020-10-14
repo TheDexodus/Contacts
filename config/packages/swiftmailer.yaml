@@ -1,0 +1,3 @@
+swiftmailer:
+    url: 'smtp://%mailer.user%:%mailer.password%@%mailer.host%'
+    spool: { type: 'memory' }

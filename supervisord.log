@@ -1,0 +1,85 @@
+2020-10-12 18:12:26,610 INFO supervisord started with pid 1
+2020-10-12 18:12:27,614 INFO spawned: 'cron' with pid 7
+2020-10-12 18:12:27,619 INFO spawned: 'php_fpm' with pid 8
+2020-10-12 18:12:27,623 INFO spawned: 'ssh' with pid 9
+2020-10-12 18:12:28,807 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-12 18:12:28,807 INFO success: php_fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-12 18:12:28,807 INFO success: ssh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-12 18:12:28,808 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:28,880 INFO spawned: 'ssh' with pid 14
+2020-10-12 18:12:28,905 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:29,910 INFO spawned: 'ssh' with pid 15
+2020-10-12 18:12:29,937 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:32,053 INFO spawned: 'ssh' with pid 18
+2020-10-12 18:12:33,088 INFO success: ssh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-12 18:12:33,088 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:34,091 INFO spawned: 'ssh' with pid 19
+2020-10-12 18:12:35,120 INFO success: ssh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-12 18:12:35,120 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:36,125 INFO spawned: 'ssh' with pid 34
+2020-10-12 18:12:37,153 INFO success: ssh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-12 18:12:37,153 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:38,158 INFO spawned: 'ssh' with pid 61
+2020-10-12 18:12:39,195 INFO success: ssh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-12 18:12:39,195 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:40,200 INFO spawned: 'ssh' with pid 62
+2020-10-12 18:12:40,224 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:41,230 INFO spawned: 'ssh' with pid 63
+2020-10-12 18:12:41,251 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:43,259 INFO spawned: 'ssh' with pid 64
+2020-10-12 18:12:44,291 INFO success: ssh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-12 18:12:44,291 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:45,295 INFO spawned: 'ssh' with pid 65
+2020-10-12 18:12:45,318 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:46,323 INFO spawned: 'ssh' with pid 66
+2020-10-12 18:12:46,345 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:48,351 INFO spawned: 'ssh' with pid 69
+2020-10-12 18:12:48,370 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:51,379 INFO spawned: 'ssh' with pid 77
+2020-10-12 18:12:51,407 INFO exited: ssh (exit status 1; not expected)
+2020-10-12 18:12:51,408 INFO gave up: ssh entered FATAL state, too many start retries too quickly
+2020-10-13 18:47:55,935 INFO supervisord started with pid 1
+2020-10-13 18:47:56,956 INFO spawned: 'cron' with pid 7
+2020-10-13 18:47:56,959 INFO spawned: 'php_fpm' with pid 8
+2020-10-13 18:47:56,969 INFO spawned: 'ssh' with pid 9
+2020-10-13 18:47:58,350 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-13 18:47:58,350 INFO success: php_fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-13 18:47:58,350 INFO success: ssh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-13 18:47:58,351 INFO exited: ssh (exit status 1; not expected)
+2020-10-13 18:47:59,102 INFO spawned: 'ssh' with pid 14
+2020-10-13 18:48:00,131 INFO success: ssh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-13 18:48:00,131 INFO exited: ssh (exit status 1; not expected)
+2020-10-13 18:48:01,136 INFO spawned: 'ssh' with pid 15
+2020-10-13 18:48:01,153 INFO exited: ssh (exit status 1; not expected)
+2020-10-13 18:48:02,801 INFO spawned: 'ssh' with pid 18
+2020-10-13 18:48:02,821 INFO exited: ssh (exit status 1; not expected)
+2020-10-13 18:48:04,827 INFO spawned: 'ssh' with pid 19
+2020-10-13 18:48:04,846 INFO exited: ssh (exit status 1; not expected)
+2020-10-13 18:48:07,852 INFO spawned: 'ssh' with pid 20
+2020-10-13 18:48:07,874 INFO exited: ssh (exit status 1; not expected)
+2020-10-13 18:48:08,875 INFO gave up: ssh entered FATAL state, too many start retries too quickly
+2020-10-14 05:10:51,322 INFO supervisord started with pid 1
+2020-10-14 05:10:52,336 INFO spawned: 'cron' with pid 7
+2020-10-14 05:10:52,341 INFO spawned: 'php_fpm' with pid 8
+2020-10-14 05:10:52,351 INFO spawned: 'ssh' with pid 9
+2020-10-14 05:10:53,520 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-14 05:10:53,521 INFO success: php_fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-14 05:10:53,521 INFO success: ssh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-14 05:10:53,522 INFO exited: ssh (exit status 1; not expected)
+2020-10-14 05:10:54,525 INFO spawned: 'ssh' with pid 14
+2020-10-14 05:10:54,676 INFO exited: ssh (exit status 1; not expected)
+2020-10-14 05:10:55,686 INFO spawned: 'ssh' with pid 17
+2020-10-14 05:10:56,726 INFO success: ssh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-14 05:10:56,726 INFO exited: ssh (exit status 1; not expected)
+2020-10-14 05:10:57,729 INFO spawned: 'ssh' with pid 18
+2020-10-14 05:10:58,757 INFO success: ssh entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-10-14 05:10:58,757 INFO exited: ssh (exit status 1; not expected)
+2020-10-14 05:10:59,760 INFO spawned: 'ssh' with pid 19
+2020-10-14 05:11:00,700 INFO exited: ssh (exit status 1; not expected)
+2020-10-14 05:11:02,273 INFO spawned: 'ssh' with pid 21
+2020-10-14 05:11:02,444 INFO exited: ssh (exit status 1; not expected)
+2020-10-14 05:11:04,505 INFO spawned: 'ssh' with pid 22
+2020-10-14 05:11:04,539 INFO exited: ssh (exit status 1; not expected)
+2020-10-14 05:11:08,409 INFO spawned: 'ssh' with pid 23
+2020-10-14 05:11:08,430 INFO exited: ssh (exit status 1; not expected)
+2020-10-14 05:11:09,432 INFO gave up: ssh entered FATAL state, too many start retries too quickly

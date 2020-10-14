@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Public contacts{% endblock %}
+
+{% block body %}
+    <div class="col-lg-8 mx-auto">
+        <h3 class="mb-4">Public Contacts</h3>
+        {% for contact in contacts %}
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5 class="card-title">{{ contact.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+
+                    {% for cummunication in contact.communications %}
+                        <p class="card-text my-1">{{ cummunication.name }}: {{ cummunication.value }}</p>
+                    {% endfor %}
+
+                    {% if app.user.favoriteContact(contact) %}
+                        <a href="{{ path('app.contacts.remove', {'id': contact.id}) }}" class="card-link mt-3">Remove from my
+                            list</a>
+                    {% else %}
+                        <a href="{{ path('app.contacts.subscribe', {'id': contact.id}) }}" class="card-link mt-3">Add to my
+                            list</a>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

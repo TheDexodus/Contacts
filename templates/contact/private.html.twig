@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Favorite contacts{% endblock %}
+
+{% block body %}
+    <div class="col-lg-8 mx-auto">
+        <h3 class="mb-4">Private Contacts</h3>
+        {% if contacts is not empty %}
+            {% for contact in contacts %}
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ contact.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+
+                        {% for cummunication in contact.communications %}
+                            <p class="card-text my-1">{{ cummunication.name }}: {{ cummunication.value }}</p>
+                        {% endfor %}
+
+                        <a href="{{ path('app.contacts.remove', {'id': contact.id}) }}" class="card-link mt-3">Remove from my
+                            list</a>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h5 class="font-italic">Your list is empty. You can <a href="{{ path('app.contacts.public') }}">add contact</a> from public contacts</h5>
+        {% endif %}
+    </div>
+{% endblock %}

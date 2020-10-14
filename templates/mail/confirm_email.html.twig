@@ -1,0 +1,3 @@
+{% set confirmUrl = domain ~ path('app.security.confirm_email') ~ '?email=' ~ user.email ~ '&code=' ~ user.confirmEmail %}
+
+Hello. To continue registration, follow the link <a href="{{ confirmUrl }}">{{ confirmUrl }}</a>

@@ -1,0 +1,55 @@
+version: '3.7'
+
+services:
+    db:
+        image: postgres:12.3-alpine
+        command: postgres -c listen_addresses=*
+        environment:
+            - TZ=Europe/Minsk
+            - POSTGRES_DB=${DB_NAME}
+            - POSTGRES_USER=${DB_USER}
+            - POSTGRES_PASSWORD=${DB_PASSWORD}
+        volumes:
+            - db_data:/var/lib/postgresql/data
+        networks:
+            - app
+        ports:
+            - ${DB_PORT}:5432
+
+    php:
+        build:
+            context: .
+            dockerfile: docker/php/dev.Dockerfile
+        environment:
+            XDEBUG_CONFIG: remote_host=${XDEBUG_REMOTE_HOST} remote_port=${XDEBUG_REMOTE_PORT}
+            PHP_IDE_CONFIG: serverName=${IDE_SERVER_NAME}
+        volumes:
+            - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+            - ./:/var/www/app.loc
+        depends_on:
+            - db
+        tty: true
+        networks:
+            - app
+
+    nginx:
+        build:
+            context: .
+            dockerfile: docker/nginx/dev.Dockerfile
+            args:
+                NGINX_PORT: ${WEB_PORT}
+        volumes:
+            - ./public/:/var/www/app.loc/public
+        depends_on:
+            - php
+        ports:
+            - ${WEB_PORT}:${WEB_PORT}
+        networks:
+            - app
+
+volumes:
+    db_data:
+
+networks:
+    app:
+        driver: bridge
